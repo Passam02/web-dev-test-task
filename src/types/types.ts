@@ -7,4 +7,5 @@ export interface WashingMachine {
     energyClass: string;
     price: number;
     imageUrl: string;
+    instalmentsPlan: boolean;
 }
