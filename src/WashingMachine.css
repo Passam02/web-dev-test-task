@@ -1,0 +1,154 @@
+.euro-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    gap: 10px;
+    width: 338px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 290px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 290px;
+    max-height: 501px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+
+    width: 290px;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.specification-box {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.specification-wrapper {
+    max-height: 71px;
+}
+.specification-label {
+    font-family: 'SamsungOne', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #767676;
+    margin: 0;
+}
+.specification-text {
+    font-family: 'SamsungOne', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: black;
+    margin: 0;
+}
+.image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.machine-name {
+    font-family: 'SamsungOne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    height: 73px;
+    margin: 0;
+}
+.price-wrap {
+    display: flex;
+    width: 112px;
+    height: 40px;
+    gap: 2px;
+    align-items: center;
+}
+.price-box {
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+}
+.price {
+    font-family: 'SamsungOne', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    margin: 0;
+    display: inline-flex;
+}
+.price-end {
+    display: flex;
+    flex-direction: column;
+    font-family: 'SamsungOne';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: right;
+    display: inline-flex;
+    flex-direction: column;
+}
+.energy-class-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 9px;
+    width: 290px;
+    height: 18px;
+}
+.button {
+    width: 150px;
+    height: 36px;
+    gap: 10px;
+    border-radius: 24px;
+    opacity: 0px;
+    background-color: #1428A0;
+    color: white;
+    border: none;
+    font-family: 'SamsungOne';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+    text-align: center;
+}
+.button-selected {
+    background-color: rgba(28, 28, 28, 1);
+}
+.instalments {
+    color: rgba(85, 85, 85, 1);
+    font-family: 'SamsungOne', sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    margin: 0;
+}
