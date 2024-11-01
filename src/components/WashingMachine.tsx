@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { WashingMachine as WashingMachineType } from './types/types';
-import './WashingMachine.css';
+import { WashingMachine as WashingMachineType } from '../types/types';
+import '../styles/WashingMachine.css';
 
 const WashingMachine: React.FC<WashingMachineType> = ({
   name,
