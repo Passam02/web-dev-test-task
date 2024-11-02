@@ -97,9 +97,10 @@
     background-color: rgba(243, 243, 243, 1);
 }
 .washing-machine-list {
-    display: grid; /* Enable grid layout */
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 16px; /* 16px gap between items */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px; 
+    margin-bottom: 16px;
 }
 .total-number {
     font-family: SamsungOne;
@@ -115,7 +116,6 @@
 .show-more {
     width: 118px;
     height: 20px;
-    margin-top: 16px;
     margin-bottom: 54px;
     margin-left: auto;
     margin-right: auto;
@@ -127,6 +127,7 @@
     font-weight: 700;
     line-height: 20px;
     text-align: center;
+    cursor: pointer;
 }
 .show-more-icon {
     margin: auto 0;
