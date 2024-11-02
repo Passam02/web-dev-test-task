@@ -1,0 +1,133 @@
+.component-wrapper {
+    Height: 1716px;
+}
+.select-device {
+    font-family: 'SamsungOne';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+}
+.search-component {
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.search-bar-wrapper {
+    max-width: 249px;
+    max-height: 36px;
+    margin-top: 23px;
+    padding: 8px 12px 8px 12px;
+    background-color: white;
+}
+.search-bar {
+    width: 218px;
+    height: 20px;
+    border: none; 
+    appearance: none;
+    box-shadow: none;
+    font-family: SamsungOne;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+.search-bar:focus {
+    border: none; 
+    outline: none; 
+    appearance: none;
+    box-shadow: none;
+}
+.filters-box {
+    display: flex;
+    margin-top: 32px;
+    width: 1032px;
+    height: 67px;
+    gap: 12px;
+}
+.sort-box {
+    display: flex;
+    flex-direction: column;
+    width: 249px;
+    height: 63px;
+    gap: 18px;
+}
+.sort-label {
+    font-family: SamsungOne;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+}
+.sort-select {
+    width: 249px;
+    height: 36px;
+    padding: 8px 12px 8px 12px;
+    gap: 10px;
+    opacity: 0px;
+    border: none; 
+    appearance: none;
+    box-shadow: none;
+    font-family: SamsungOne;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 10.5L12.1292 0.75H0.870835L6.5 10.5Z' fill='%238D8D8D'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+.sort-select:focus-visible {
+    border: none; 
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+}
+.sort-select option {
+    font-family: SamsungOne;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+.sort-select option:focus-visible {
+    background-color: rgba(243, 243, 243, 1);
+}
+.washing-machine-list {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 16px; /* 16px gap between items */
+}
+.total-number {
+    font-family: SamsungOne;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    display: block;
+    margin-top: 16px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+}
+.show-more {
+    width: 118px;
+    height: 20px;
+    margin-top: 16px;
+    margin-bottom: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 9px;
+    display: flex;
+    color: rgba(0, 122, 255, 1);
+    font-family: SamsungOne;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+.show-more-icon {
+    margin: auto 0;
+}
