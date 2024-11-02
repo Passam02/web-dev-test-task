@@ -62,39 +62,6 @@
     line-height: 22px;
     text-align: left;
 }
-.sort-select {
-    width: 249px;
-    height: 36px;
-    padding: 8px 12px 8px 12px;
-    gap: 10px;
-    border: none; 
-    appearance: none;
-    box-shadow: none;
-    font-family: SamsungOne;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    background-image: url("data:image/svg+xml,%3Csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 10.5L12.1292 0.75H0.870835L6.5 10.5Z' fill='%238D8D8D'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-}
-.sort-select:focus-visible {
-    border: none; 
-    appearance: none;
-    outline: none;
-    box-shadow: none;
-}
-.sort-select option {
-    font-family: SamsungOne;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: left;
-}
-.sort-select option:focus-visible {
-    background-color: rgba(243, 243, 243, 1);
-}
 .washing-machine-list {
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
