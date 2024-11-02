@@ -27,7 +27,7 @@
     padding: 0px;
     gap: 12px;
     width: 290px;
-    max-height: 501px;
+    min-height: 501px;
 }
 .description {
     display: flex;

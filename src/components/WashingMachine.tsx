@@ -10,7 +10,8 @@ const WashingMachine: React.FC<WashingMachineType> = ({
   energyClass,
   price,
   imageUrl,
-  instalmentsPlan
+  instalmentsPlan,
+  popularity
 }) => {
   const [selected, setSelected] = useState(false);
   

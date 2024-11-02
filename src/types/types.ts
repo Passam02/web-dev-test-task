@@ -8,4 +8,5 @@ export interface WashingMachine {
     price: number;
     imageUrl: string;
     instalmentsPlan: boolean;
+    popularity: number;
 }
