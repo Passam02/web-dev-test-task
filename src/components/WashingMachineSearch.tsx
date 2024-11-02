@@ -11,8 +11,10 @@ const SearchComponent: React.FC = () => {
     const [energyClass, setEnergyClass] = useState('');
     const [capacity, setCapacity] = useState('');
 
+    const [visibleCount, setVisibleCount] = useState(6); 
+
     const functions = ['Drzwi AddWash™', 'Panel AI Control', 'Silnik inwerterowy', 'Wyświetlacz elektroniczny'];
-  
+
     const filteredMachines = washingMachinesData
       .filter((machine) =>
         machine.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -26,6 +28,12 @@ const SearchComponent: React.FC = () => {
         if (sort === 'Popularność') return b.popularity - a.popularity;
         return 0;
       });
+
+    const displayedMachines = filteredMachines.slice(0, visibleCount);
+
+    const handleShowMore = () => {
+        setVisibleCount((prevCount) => Math.min(prevCount + 6, filteredMachines.length)); 
+    };
   
     return (
       <div className='component-wrapper'>
@@ -33,11 +41,11 @@ const SearchComponent: React.FC = () => {
         <div className="search-component">
             <div className='search-bar-wrapper'>
                 <input
-                type="text"
-                placeholder="Search..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className='search-bar'
+                    type="text"
+                    placeholder="Search..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className='search-bar'
                 />
             </div>
             <div className='filters-box'>
@@ -105,16 +113,18 @@ const SearchComponent: React.FC = () => {
             <div>
                 <span className='total-number'>Liczba wyników: {filteredMachines.length}</span>
                 <div className="washing-machine-list">
-                {filteredMachines.map((machine) => (
+                {displayedMachines.map((machine) => (
                     <WashingMachine key={machine.id} {...machine} />
                 ))}
                 </div>
-                <span className='show-more'>
-                    Pokaż więcej 
-                    <svg className='show-more-icon' width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 5.5L6.53109 0.25H0.468911L3.5 5.5Z" fill="#007AFF"/>
-                    </svg>
-                </span>
+                {visibleCount < filteredMachines.length && (
+                    <span className='show-more' onClick={handleShowMore}>
+                        Pokaż więcej 
+                        <svg className='show-more-icon' width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 5.5L6.53109 0.25H0.468911L3.5 5.5Z" fill="#007AFF"/>
+                        </svg>
+                    </span>
+                )}
             </div>
         </div>
       </div>
